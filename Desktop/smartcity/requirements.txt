@@ -1,0 +1,18 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+cassandra-driver
+kafka-python
+paho-mqtt
+pyjwt
+passlib[bcrypt]
+pydantic
+streamlit
+plotly
+pandas
+numpy
+scikit-learn
+prophet
+torch            # optional if you plan to use LSTM with PyTorch
+pytest
+requests

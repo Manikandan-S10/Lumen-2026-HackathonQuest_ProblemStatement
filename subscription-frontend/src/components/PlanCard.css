@@ -1,0 +1,159 @@
+.plan-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.plan-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.plan-card.fibernet {
+  border-color: #667eea;
+}
+
+.plan-card.copper {
+  border-color: #f39c12;
+}
+
+.plan-header {
+  margin-bottom: 1rem;
+}
+
+.plan-name {
+  color: #333;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.plan-type {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.plan-card.fibernet .plan-type {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.plan-card.copper .plan-type {
+  background: #fff3e0;
+  color: #f57c00;
+}
+
+.plan-pricing {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.price-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.original-price {
+  color: #999;
+  text-decoration: line-through;
+  font-size: 1rem;
+}
+
+.current-price {
+  color: #333;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.price-period {
+  color: #666;
+  font-size: 1rem;
+}
+
+.discount-badge {
+  background: #e74c3c;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.plan-features {
+  margin-bottom: 1.5rem;
+}
+
+.feature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.feature:last-child {
+  border-bottom: none;
+}
+
+.feature-label {
+  color: #666;
+  font-size: 14px;
+}
+
+.feature-value {
+  color: #333;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.subscribe-button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.plan-card.fibernet .subscribe-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.plan-card.copper .subscribe-button {
+  background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+  color: white;
+}
+
+.subscribe-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.subscribe-button:disabled {
+  background: #e9ecef;
+  color: #6c757d;
+  cursor: not-allowed;
+}
+
+.subscribe-button.subscribed {
+  background: #28a745;
+  color: white;
+}
+
